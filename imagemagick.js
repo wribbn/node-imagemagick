@@ -121,7 +121,7 @@ function parseIdentify(input) {
       }
       if (comps.length < 2) {
         props.push(prop);
-        if (currentLine.indexOf(':')>=0)
+        if (currentLine.indexOf(':')>=0) {
           prop = prop[currentLine.split(':')[0].trim().toLowerCase()] = {};
         }
       } else {
